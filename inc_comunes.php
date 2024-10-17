@@ -17,3 +17,15 @@ function conectarse($bdserver,$serveruser,$serverpwd,$bd,$port){
 	}
 	return $conectado;
 }
+
+
+function esColorRGB($coloresPOST) {
+	$devuelve = true;
+	for($i=0;$i<count($coloresPOST)) {
+		if($coloresPOST[$i]<0 && $coloresPOST[$0i]>255){
+			$devuelve = false;
+		}
+	}
+
+	return $devuelve;
+}
